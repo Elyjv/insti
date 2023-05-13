@@ -1,0 +1,31 @@
+html{
+    font-size: 62.5%;
+    color: black;
+}
+body{
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    
+}
+h1{
+    text-align: center;
+    font-size: 3.8rem;
+    font-family: 'Krub', sans-serif;
+    
+
+}
+
+.contenedor { /*margen dimension de la barra*/
+    width: 120rem;
+    margin: 0 auto;
+    }
+
+    .nav-bg{
+        color:blueviolet; /*color de la barra*/
+    }
+
+    .navegacion-principal { /*esto es para darle espacio entre cada menu a lo largo*/
+    
+        display: flex;
+        justify-content: space-evenly; /*es el estilo de espacio que hay entre cada opcion de la barra*/
+    }
