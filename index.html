@@ -7,70 +7,52 @@
     <title>web instituto</title>
     <link rel="proload" href="styles.css" as= "styles">
     <link href="styles.css" rel="stylesheet">
+
+    
 </head>
 <body>
+    
+
     <head>
-        <h1> I.S.F.D.y.T Nº152</h1>
+        <img src="logo del insti.jpg" width="5%" height="auto" style="float:right" alt="logo">
+        <h1> I.S.F.D.y.T Nº152</h1 > 
+       
     </head>
-   
+
+<!--el header se utiliza para darle funcion al menu-->
+    <header>
+
     <div class="nav-bg"></div>
     
     <nav class="navegacion-principal contenedor">
         
-        <a href="" >Inicio</a>
-        <a href="">Historia</a>
-        <a href="">Carreras</a>
-        <a href="">Contactos</a>
-    
+
+        <ul>
+        
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="carrera.html">Carreras</a></li>
+
+        </ul>
+
+    </header>  
+        
     </nav>
-
+    <img src="instituto.jpg" width="90%" height="auto" alt="instituto152"> 
     <section>
+        
+        
         <h2>Contactos</h2>
-       
-        <form>
-            <fieldset>
-                <legend>contactanos llenando todos los campos</legend>
-            <div>
-                <label>Nombre</label>
-                <input type="text" placeholder="tu nombre">
-            
-            </div>
-
-            
-            <div>  
-                <label>Telefono</label>
-                <input type="tel" placeholder="tu telefono"> 
-            
-            </div>
-
-            
-            
-            <div>
-
-                <label>Correo</label>
-                <input type="email" placeholder="tu email">
-            
-            </div>
-
-            
-            <div>
-
-                <label>Mensaje</label>
-                <textarea></textarea>
-            
-            </div>
-
-            
-            
-            <div>
-
-                <input type="submit" value="Enviar">
-            
-            </div>
-
-
-            </fieldset>
-        </form>
+     
+        <form id="miFormulario" onsubmit="borrarDatos()">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="tel" id="telefono" placeholder="Teléfono" required>
+            <input type="email" id="correo" placeholder="Correo electrónico" required>
+            <textarea id="mensaje" placeholder="Mensaje" required></textarea>
+            <button type="submit" id="enviar">Enviar</button>
+          </form>
+          
+               
     
     
 
@@ -97,7 +79,7 @@
 </footer>
 
 
-
+<script src="form.js"></script>
 
 </body>
 </html>

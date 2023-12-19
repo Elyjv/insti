@@ -1,31 +1,94 @@
 html{
-    font-size: 62.5%;
+    font-size: 90%;
     color: black;
+
 }
 body{
     font-size: 16px;
     font-family: 'Krub', sans-serif;
+    background-color:antiquewhite;
     
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 h1{
     text-align: center;
-    font-size: 3.8rem;
+    font-size: 4.8rem;
     font-family: 'Krub', sans-serif;
+    
     
 
 }
 
+h1 {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /*es para darle sombra al titulo*/
+  }
+
 .contenedor { /*margen dimension de la barra*/
-    width: 120rem;
+    width: 90rem;
     margin: 0 auto;
     }
 
     .nav-bg{
         color:blueviolet; /*color de la barra*/
+        
     }
 
     .navegacion-principal { /*esto es para darle espacio entre cada menu a lo largo*/
     
         display: flex;
-        justify-content: space-evenly; /*es el estilo de espacio que hay entre cada opcion de la barra*/
+        justify-self: baseline; /*es el estilo de espacio que hay entre cada opcion de la barra*/
+        text-decoration: none;
+        font-size: 2rem;
+        
     }
+
+    /* Estilos para el formulario */
+#miFormulario {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilos para el botón */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+    footer {
+        text-align: center;
+    }
+
+
